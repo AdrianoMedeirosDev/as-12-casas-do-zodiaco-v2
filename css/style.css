@@ -1,0 +1,369 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding: 13px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 999;
+    transition: 0.5s;
+}
+
+header.rolagem {
+    background-color: #ffffff;
+    padding: 2px 4%;
+}
+
+header.rolagem a, header.rolagem i{
+    color: rgb(255, 255, 255);
+}
+
+.logo-image {
+    text-align: center;
+    align-items: center;
+}
+.logo-image img {
+    width: 200px;
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.logo-image img:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.painel-signos {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(77, 83, 140);
+    background-image: url(../img/fundo.png);
+    z-index: 100;
+}
+
+.container-flex {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 7fr 5fr;
+}
+
+.container-flex-left {
+    padding: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-left: 75px;
+}
+
+
+.container-flex-left h1{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 64px;
+    margin-top: 180px;
+    margin-bottom: 14px;
+}
+
+.painel-left {
+    width: 750px;
+    height: 140px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 180px;
+}
+
+.painel-left-text h2{
+    text-align: left;
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    font: 800 16px 'Montserrat', sans-serif;
+    margin-bottom: 16px;
+}
+
+.button-list {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+}
+
+button {
+    background: transparent;
+    padding: 0px;
+    border: none;
+    appearance: none;
+    padding-bottom: 10px;
+}
+
+.button-name {
+    margin-right: 20px;
+    width: auto;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    appearance: none;
+    border-radius: 8px;
+    transition: transform 0.1s ease 0s, box-shadow 0.1s ease 0s;
+    border-bottom: 4px solid rgb(161, 35, 101);
+    min-height: 44px;
+    padding: 8px 30px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    background-color: rgb(205, 0, 107);
+    color: rgb(255, 255, 255);
+}
+
+.button-name:hover {
+    transform: scale(1.1);
+    box-shadow: black;
+}
+
+.container-flex-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin-right: 150px;
+}
+
+.right {
+    display: table;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 160px;
+    margin-left: -20px;
+}
+
+.painel-right {
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 8px 10px;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.painel-right-title  {
+    color: rgb(77, 83, 140);
+    font: 700 21px / 24px 'Montserrat', sans-serif;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: center;
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.painel-right-text {
+    font-size: 14px;
+    margin-bottom: 24px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 25px;
+    color: rgba(0, 0, 0, 0.763);
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.painel-right-box-form {
+    position: relative;
+    box-shadow: rgb(148, 148, 148) 0px 0px 0px 1px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease 0s;
+    width: 80%;
+    margin-left: 30px;
+}
+
+.painel-right-form {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+    top: 0px;
+    height: 100%;
+    left: calc(12px);
+    line-height: 1;
+    max-width: calc(100% - 24px);
+}
+
+.painel-right-form-span {
+    position: relative;
+    z-index: 1;
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    color: rgb(102, 102, 102);
+    transition: transform 0.2s ease 0s, font-size 0.2s ease 0s, background 0.2s ease 0s;
+    padding: 0px 4px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transform: translateY(-24px);
+    font-size: 14px;
+    background: rgb(255, 255, 255);
+}
+
+input {
+    position: relative;
+    background: rgb(255, 255, 255);
+    font-family: "Open Sans", helvetica, arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(51, 51, 51);
+    border: none;
+    border-radius: 8px;
+    outline: 0px;
+    width: 100%;
+    padding: 10px 16px;
+}
+
+form button {
+    margin-left: 85px;
+    margin-top: 25px;
+}
+
+.conteudo-box {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.signo-seu {
+    margin-bottom: 48px;
+}
+
+.signo-seu h3 {
+    font-weight: 800;
+    color: rgb(77, 83, 140);
+    font-family: "Montserrat", sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 24px 0px 16px;
+}
+
+.signo-seu h4 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.o-que-sao-signos {
+    margin-bottom: 48px;
+}
+
+.o-que-sao-signos h2 {
+    font-weight: 800;
+    color: rgb(77, 83, 140);
+    font-family: "Montserrat", sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 24px 0px 16px;
+}
+
+.o-que-sao-signos p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.quem-criou-eles {
+    margin-bottom: 48px;
+}
+
+.quem-criou-eles h2 {
+    font-weight: 800;
+    color: rgb(77, 83, 140);
+    font-family: "Montserrat", sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 24px 0px 16px;
+}
+
+.quem-criou-eles p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.datas-signos {
+    margin-bottom: 48px;
+}
+
+.datas-signos h2 {
+    font-weight: 800;
+    color: rgb(77, 83, 140);
+    font-family: "Montserrat", sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    margin: 24px 0px 16px;
+}
+
+.datas-signos p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.datas-signos img{
+    object-fit: cover;
+    padding: 25px;
+    margin-left: 230px;
+}
+
+body {
+    height: 200vh;
+    
+}

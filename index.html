@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home Page</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header>
+        <div class="logo-image">
+            <img src="./img/logo.svg" width="60px" height="60px">
+        </div>
+    </header>
+
+    <!--PAINEL ESQUERDA-->
+    <section class="painel-signos">
+        <div class="container-flex">
+            <div class="container-flex-left">
+                <h1>SIGNOS</h1>
+                <div class="painel-left">
+                    <div class="painel-left-text">
+                        <h2>O QUE VOCÊ ESTÁ PROCURANDO?</h2>
+                    </div>
+
+                    <!--NAVEGAÇÃO SITE-->
+                    <div class="button-list">
+                        <nav>
+                            <button><a href="#o-que-sao-signos">
+                                <span class="button-name">O que são signos?</span>
+                            </a></button>
+
+                            <button><a href="#quem-criou-eles">
+                                <span class="button-name">Quem criou eles?</span>
+                            </a></button>
+
+                            <button><a href="#datas-signos">
+                                <span class="button-name">Datas dos signos</span>
+                            </a></button>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <!--PAINEL DA DIREITA-->
+            <div class="container-flex-right">
+                <section class="right">
+                    <div class="painel-right">
+                        <div class="painel-right-title">
+                            <h1>DESCUBRA SEU SIGNO</br>NESSE INSTANTE</h1>
+                        </div>
+                        <p class="painel-right-text">Acompanhe suas tendências diariamente e receba conselhos para cada momento.</p>
+                        <form>
+                            <div class="painel-right-box-form">
+                                <input id="valorDia" type="number" placeholder="Seu dia de nascimento" class="formCampo">
+                                <input id="valorMes" type="number" placeholder="Seu mês de nascimento" class="formCampo2">
+                            </div>
+                            <nav>
+                                <button onclick="MudaDesenho()" class="button-list"><a href="#signo-seu">
+                                    <span class="button-name">Ver meu signo</span>
+                                </a></button>
+                            </nav>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!--CONTEÚDO DO SITE-->
+        <div class="conteudo-box">
+            <section id="signo-seu" class="signo-seu">
+                <h3></h3>
+                <h4></h4>
+            </section>
+
+            <section id="o-que-sao-signos" class="o-que-sao-signos">
+                <h2>O QUE SÃO SIGNOS?</h2>
+                <p>O que se conhece como signo é na verdade o signo solar, que é a posição que o Sol ocupa em relação à Terra no momento do nascimento de cada pessoa. O signo solar sinaliza características da sua personalidade, mas você tem outros signos marcantes, como o ascendente ou a lua, por exemplo. Lendo a posição de todos os signos no seu Mapa Astral você pode mergulhar num caminho de autoconhecimento e entender quem de fato você é, como se relaciona e muito mais.</p>
+            </section>
+
+            <section id="quem-criou-eles" class="quem-criou-eles">
+                <h2>QUEM CRIOU ELES?</h2>
+                <p>Os signos do zodíaco, como os conhecemos hoje, têm raízes antigas que remontam a civilizações antigas e culturas diversas em todo o mundo. Não existe uma única pessoa ou entidade que possa ser creditada com a criação dos signos do zodíaco, pois eles evoluíram ao longo de milhares de anos de observação astronômica e práticas culturais.<br><br>
+
+                Os primeiros registros de astrologia datam de civilizações antigas, como os sumérios e os babilônios, que desenvolveram sistemas rudimentares de astrologia por volta de 2000 a.C. Essas civilizações observavam os movimentos dos planetas e estrelas no céu e acreditavam que eles tinham influência sobre eventos na Terra, incluindo a personalidade e o destino das pessoas.<br><br>
+                    
+                Os gregos antigos contribuíram significativamente para o desenvolvimento da astrologia ocidental. O astrônomo grego Claudius Ptolemy, no século II d.C., escreveu "Tetrabiblos," uma obra influente que estabeleceu as bases da astrologia ocidental clássica. Ele dividiu a eclíptica em doze partes iguais, que mais tarde se tornaram os doze signos do zodíaco, cada um associado a constelações específicas.<br>
+                    
+                A astrologia também era praticada em culturas orientais, como a chinesa e a védica indiana, que desenvolveram seus próprios sistemas de signos astrológicos.<br><br>
+                    
+                Em resumo, os signos do zodíaco são o resultado de uma longa evolução cultural e astronômica ao longo da história da humanidade. Eles não foram criados por uma única pessoa, mas sim moldados ao longo do tempo por diversas civilizações que procuravam compreender melhor o cosmos e seu impacto nas vidas das pessoas. Hoje, a astrologia e os signos do zodíaco continuam a ser estudados e interpretados de várias maneiras, sendo uma parte intrigante da cultura e da espiritualidade em muitas sociedades.</p>
+            </section>
+
+            <section id="datas-signos" class="datas-signos">
+                <h2>DATAS SIGNOS</h2>
+                <p>Conheça as datas dos signos. O ano novo astrológico se inicia com Áries, geralmente no dia 20 de março. O sol permanece, mais ou menos, um mês em cada signo.</p>
+                <img src="./img/signosData.png"></img>
+            </section>
+
+        </div>
+    </section>
+    
+</body>
+</html>
